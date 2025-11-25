@@ -103,17 +103,17 @@ public static void Soru9(){
     }
 }
 public static void Soru10(){
-    System.out.print("Taban sayısını giriniz: ");
+    IO.print("Taban sayısını giriniz: ");
     int a = oku.nextInt();
-    System.out.print("Üs sayısını giriniz: ");
+    IO.print("Üs sayısını giriniz: ");
     int b = oku.nextInt();
     int sonuc = 1;
     for (int i = 1; i <= b; i++) {sonuc = sonuc * a;}
-    System.out.println("Sonuç: " + sonuc);
+    IO.println("Sonuç: " + sonuc);
 }
 
 public static void Soru11(){
-    System.out.print("Bir sayı giriniz: ");
+    IO.print("Bir sayı giriniz: ");
     int s = oku.nextInt();
     int a = 0;
     for (int i = 1; i <= s; i++) {
@@ -121,27 +121,27 @@ public static void Soru11(){
             a++;
         }
     }
-    System.out.println("Tam bölenlerin sayısı: " + a);
+    IO.println("Tam bölenlerin sayısı: " + a);
 }
 
 public static void Soru12(){
-    System.out.print("Kaç adet sayı gireceksiniz?: ");
+    IO.print("Kaç adet sayı gireceksiniz?: ");
     int a = oku.nextInt();
     double t = 0;
     double s;
     for (int i = 1; i <= a; i++) {
-        System.out.print(i + ". sayıyı giriniz: ");
+        IO.print(i + ". sayıyı giriniz: ");
         s = oku.nextDouble();
         t = t + s;
     }
     double o = t / a;
-    System.out.println("Girdiğiniz sayıların ortalaması: " + o);
+    IO.println("Girdiğiniz sayıların ortalaması: " + o);
 }
 
 public static void Soru13(){
-    System.out.print("Başlangıç sayısını giriniz: ");
+    IO.print("Başlangıç sayısını giriniz: ");
     int a = oku.nextInt();
-    System.out.print("Bitiş sayısını giriniz: ");
+    IO.print("Bitiş sayısını giriniz: ");
     int b = oku.nextInt();
     int toplam = 0;
     int adet = 0;
@@ -153,10 +153,10 @@ public static void Soru13(){
     }
     if (adet > 0) {
         double ortalama = (double)toplam / adet;
-        System.out.println("Tek Sayıların Toplamı: " + toplam);
-        System.out.println("Tek Sayıların Ortalaması: " + ortalama);
+        IO.println("Tek Sayıların Toplamı: " + toplam);
+        IO.println("Tek Sayıların Ortalaması: " + ortalama);
     }
-    else {System.out.println("Bu aralıkta hiç tek sayı yok.");}
+    else {IO.println("Bu aralıkta hiç tek sayı yok.");}
 }
 
 public static void Soru14(){
@@ -169,22 +169,22 @@ public static void Soru14(){
 }
 
 public static void Soru15(){
-    System.out.print("Kaçıncı ay olduğunu giriniz (1-12): ");
+    IO.print("Kaçıncı ay olduğunu giriniz (1-12): ");
     int ay = oku.nextInt();
     switch (ay) {
-        case 1:  System.out.println("Ocak"); break;
-        case 2:  System.out.println("Şubat"); break;
-        case 3:  System.out.println("Mart"); break;
-        case 4:  System.out.println("Nisan"); break;
-        case 5:  System.out.println("Mayıs"); break;
-        case 6:  System.out.println("Haziran"); break;
-        case 7:  System.out.println("Temmuz👍👍"); break;
-        case 8:  System.out.println("Ağustos"); break;
-        case 9:  System.out.println("Eylül"); break;
-        case 10: System.out.println("Ekim"); break;
-        case 11: System.out.println("Kasım"); break;
-        case 12: System.out.println("Aralık"); break;
-        default: System.out.println("Hatalı giriş!"); break;
+        case 1:  IO.println("Ocak"); break;
+        case 2:  IO.println("Şubat"); break;
+        case 3:  IO.println("Mart"); break;
+        case 4:  IO.println("Nisan"); break;
+        case 5:  IO.println("Mayıs"); break;
+        case 6:  IO.println("Haziran"); break;
+        case 7:  IO.println("Temmuz👍👍"); break;
+        case 8:  IO.println("Ağustos"); break;
+        case 9:  IO.println("Eylül"); break;
+        case 10: IO.println("Ekim"); break;
+        case 11: IO.println("Kasım"); break;
+        case 12: IO.println("Aralık"); break;
+        default: IO.println("Hatalı giriş!"); break;
     }
 }
 
@@ -193,7 +193,7 @@ public static void Soru16(){
     for (int i = 1; i <= 10; i++) {
         t = t + (i * i);
     }
-    System.out.println("Toplamı: " + t);
+    IO.println("Toplamı: " + t);
 }
 
 public static void Soru17(){
@@ -201,42 +201,42 @@ public static void Soru17(){
     int na = 0;
     int sa = 0;
     int s;
-    System.out.println("Lütfen 10 adet sayı giriniz:");
+    IO.println("Lütfen 10 adet sayı giriniz:");
     for (int i = 1; i <= 10; i++) {
-        System.out.print(i + ". sayıyı giriniz: ");
+        IO.print(i + ". sayıyı giriniz: ");
         s = oku.nextInt();
         if (s > 0) {pa++;}
         else if (s < 0) {na++;}
         else {sa++;}
     }
-    System.out.println("Pozitif Sayı Adedi: " + pa);
-    System.out.println("Negatif Sayı Adedi: " + na);
-    System.out.println("Sıfır Sayısı Adedi: " + sa);
+    IO.println("Pozitif Sayı Adedi: " + pa);
+    IO.println("Negatif Sayı Adedi: " + na);
+    IO.println("Sıfır Sayısı Adedi: " + sa);
 }
     public static void main(String[] args) {
         while (true) {
-            for(int i=0; i<5; i++) System.out.println();
-            System.out.println("================ 2. Çalışma Soruları ================");
-            System.out.println("1.  Klavyeden girilen 10 sayıdan tek ve çiftlerin toplamını bulan ve yazdıran");
-            System.out.println("2.  Klavyeden girilen 10 sayıdan tek ve çiftlerin sayısını bulan ve yazdıran");
-            System.out.println("3.  Klavyeden girilen 5 sayıdan en büyüğünü bulup yazdıran");
-            System.out.println("4.  Klavyeden girilen 5 sayının ortalamasını bulan ve yazdıran");
-            System.out.println("5.  50-100 arasındaki sayıların toplamını bulan ve yazdıran");
-            System.out.println("6.  50 ile 100 arasında 3 ün katlarını ekrana yazdıran");
-            System.out.println("7.  Klavyeden girilen bir sayının faktöriyelini bulduran");
-            System.out.println("8.  Klavyeden girilen N sayısına göre 1’ den N’e kadar olan sayıların toplamını bulduran");
-            System.out.println("9.  Klavyeden girilen a ve b sayıları arasındaki tek sayıları listeleyen program");
-            System.out.println("10.  Klavyeden girilen a ve b sayılarından a üstü b yi hesaplayan program");
-            System.out.println("11.  Klavyeden girilen bir sayının tam bölenlerinin sayısını bulduran program");
-            System.out.println("12.  Kullanıcının istediği miktarda girdiği sayıların ortalamasını hesaplayan program");
-            System.out.println("13.  Klavyeden girilen a ve b değerlerine göre a-b arası tek sayıların toplamını ve ortalamasını bulan program");
-            System.out.println("14.  1 den 25 e kadar olan sayıların kareleri toplamını bulan program");
-            System.out.println("15.  Klavyeden girilen 1-12 arasındaki tamsayıların hangi aya denk geldiğini bulup ekrana yazan program");
-            System.out.println("16.  1+4+9+ … +100= değerini hesaplayan program");
-            System.out.println("17.  Girilen 10 adet sayi içerisinden pozitiflerin ve negatiflerin ve “0” sayısını ayrı ayrı programın akış diyagramını yapınız program");
-            System.out.println("0.  ÇIKIŞ");
-            System.out.println("=========================================");
-            System.out.print("Seçiminiz: ");
+            for(int i=0; i<5; i++) IO.println("");
+            IO.println("================ 2. Çalışma Soruları ================");
+            IO.println("1.  Klavyeden girilen 10 sayıdan tek ve çiftlerin toplamını bulan ve yazdıran");
+            IO.println("2.  Klavyeden girilen 10 sayıdan tek ve çiftlerin sayısını bulan ve yazdıran");
+            IO.println("3.  Klavyeden girilen 5 sayıdan en büyüğünü bulup yazdıran");
+            IO.println("4.  Klavyeden girilen 5 sayının ortalamasını bulan ve yazdıran");
+            IO.println("5.  50-100 arasındaki sayıların toplamını bulan ve yazdıran");
+            IO.println("6.  50 ile 100 arasında 3 ün katlarını ekrana yazdıran");
+            IO.println("7.  Klavyeden girilen bir sayının faktöriyelini bulduran");
+            IO.println("8.  Klavyeden girilen N sayısına göre 1’ den N’e kadar olan sayıların toplamını bulduran");
+            IO.println("9.  Klavyeden girilen a ve b sayıları arasındaki tek sayıları listeleyen program");
+            IO.println("10.  Klavyeden girilen a ve b sayılarından a üstü b yi hesaplayan program");
+            IO.println("11.  Klavyeden girilen bir sayının tam bölenlerinin sayısını bulduran program");
+            IO.println("12.  Kullanıcının istediği miktarda girdiği sayıların ortalamasını hesaplayan program");
+            IO.println("13.  Klavyeden girilen a ve b değerlerine göre a-b arası tek sayıların toplamını ve ortalamasını bulan program");
+            IO.println("14.  1 den 25 e kadar olan sayıların kareleri toplamını bulan program");
+            IO.println("15.  Klavyeden girilen 1-12 arasındaki tamsayıların hangi aya denk geldiğini bulup ekrana yazan program");
+            IO.println("16.  1+4+9+ … +100= değerini hesaplayan program");
+            IO.println("17.  Girilen 10 adet sayi içerisinden pozitiflerin ve negatiflerin ve “0” sayısını ayrı ayrı programın akış diyagramını yapınız program");
+            IO.println("0.  ÇIKIŞ");
+            IO.println("=========================================");
+            IO.print("Seçiminiz: ");
             int secim = oku.nextInt();
             if (secim == 0) break;
             switch (secim) {
@@ -258,9 +258,9 @@ public static void Soru17(){
                 case 16: Soru16(); break;
                 case 17: Soru17(); break;
 
-                default: System.out.println("Hatalı seçim!"); break;
+                default: IO.println("Hatalı seçim!"); break;
             }
-            System.out.println("\nDevam etmek için bir sayı girip Enter'a bas...");
+            IO.println("\nDevam etmek için bir sayı girip Enter'a bas...");
             oku.next();
         }
     }
