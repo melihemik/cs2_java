@@ -74,10 +74,9 @@ public static void Soru6(){
 public static void Soru7(){
     IO.print("sayıyı giriniz: ");
     int s = oku.nextInt();
-    int sonuc = 1;
+    long sonuc = 1;
     for (int i = 1; i <= s; i++) {sonuc = sonuc * i;}
     IO.println("Sonuç: " + sonuc);
-    // hatalı
 }
 
 public static void Soru8(){
